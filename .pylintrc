@@ -1,0 +1,9 @@
+[MASTER]
+ignore=venv
+
+[MESSAGES CONTROL]
+disable=C0111,  # Missing docstring
+        R0903,  # Too few public methods
+
+[FORMAT]
+max-line-length=88
