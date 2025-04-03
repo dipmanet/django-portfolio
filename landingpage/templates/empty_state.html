@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>No Data Available !</title>
+		<style>
+			* {
+				box-sizing: border-box;
+				margin: 0;
+				padding: 0;
+			}
+			body {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				min-height: 100vh;
+				background-color: #f8f9fa;
+				font-family: Arial, sans-serif;
+				text-align: center;
+				padding: 20px;
+			}
+			.container {
+				background: white;
+				padding: 30px;
+				border-radius: 10px;
+				box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+				width: 100%;
+				max-width: 400px;
+			}
+			.icon {
+				font-size: clamp(40px, 8vw, 50px);
+				color: #6c757d;
+				margin-bottom: 15px;
+			}
+			h2 {
+				color: #343a40;
+				font-size: clamp(24px, 5vw, 28px);
+				margin-bottom: 15px;
+			}
+			p {
+				color: #6c757d;
+				font-size: clamp(16px, 3vw, 18px);
+				margin-bottom: 20px;
+			}
+			.btn {
+				display: inline-block;
+				margin-top: 5px;
+				padding: clamp(8px, 2vw, 10px) clamp(15px, 4vw, 20px);
+				background-color: #007bff;
+				color: white;
+				text-decoration: none;
+				border-radius: 5px;
+				font-size: clamp(14px, 3vw, 16px);
+				transition: background-color 0.3s ease;
+			}
+			.btn:hover {
+				background-color: #0056b3;
+			}
+			@media (max-width: 320px) {
+				.container {
+					padding: 20px;
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="icon">📭</div>
+			<h2>No Data Available</h2>
+			<p>There is no content to display at the moment. Please check back later.</p>
+			<a href="javascript:location.reload()" class="btn">Refresh</a>
+		</div>
+	</body>
+</html>
